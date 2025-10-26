@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+body {
+  background: linear-gradient(180deg, #e9f3ff, #f5faff);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+* {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 2.5rem 2rem;
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(100, 150, 255, 0.15);
+  width: 90%;
+  max-width: 480px;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.3rem;
+  color: #4a6fa5;
+  margin-bottom: 0.3rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #7c9ecb;
+  margin-bottom: 2rem;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  border-radius: 18px;
+  background-color: #f3f8ff;
+  font-size: 1rem;
+  color: #3b3b3b;
+  resize: none;
+  box-shadow: inset 0 2px 6px rgba(180, 200, 255, 0.3);
+  margin-bottom: 1rem;
+  display: block;
+}
+
+button {
+  background-color: #a8c9ff;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #91b8ff;
+  box-shadow: 0 4px 12px rgba(150, 180, 255, 0.4);
+}
+
+.entries {
+  margin-top: 2.5rem;
+  text-align: left;
+}
+
+.entries h2 {
+  color: #4a6fa5;
+  margin-bottom: 0.8rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background-color: #f3f8ff;
+  padding: 0.9rem 1rem;
+  border-radius: 12px;
+  margin-bottom: 0.6rem;
+  box-shadow: 0 2px 6px rgba(100, 150, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.deleteBtn {
+  background: none;
+  border: none;
+  color: #a0b8e0;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.2s;
+}
+
+.deleteBtn:hover {
+  color: #618be0;
+}
+.entry-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.entry-text {
+  margin: 0;
+  color: #3b3b3b;
+  font-size: 0.95rem;
+}
+
+.entry-date {
+  color: #7ea2d6;
+  font-size: 0.8rem;
+}
+/* 🌈 Theme selector */
+#themeSelect {
+  background-color: #f3f8ff;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  color: #4a6fa5;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(150, 180, 255, 0.2);
+  transition: 0.3s;
+}
+
+#themeSelect:hover {
+  box-shadow: 0 3px 10px rgba(150, 180, 255, 0.3);
+}
+
+/* 🌸 Pastel Theme Colors */
+body.blue {
+  background: linear-gradient(180deg, #e9f3ff, #f5faff);
+}
+
+body.pink {
+  background: linear-gradient(180deg, #ffeef4, #fff6fa);
+}
+
+body.lavender {
+  background: linear-gradient(180deg, #f3efff, #faf7ff);
+}
+
+body.blue .title { color: #4a6fa5; }
+body.pink .title { color: #c06b9a; }
+body.lavender .title { color: #8a74c9; }
+
+body.blue button {
+  background-color: #a8c9ff;
+}
+body.pink button {
+  background-color: #f8a8c3;
+}
+body.lavender button {
+  background-color: #b9a6f8;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+li {
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

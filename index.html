@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jl 🌸 Journal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+  <h1 class="title">Jl 🌸</h1>
+  <p class="subtitle">a soft space for your thoughts</p>
+
+  <!-- 🌈 Theme Switcher -->
+  <select id="themeSelect">
+    <option value="blue" selected>💙 Blue</option>
+    <option value="pink">💗 Pink</option>
+    <option value="lavender">💜 Lavender</option>
+  </select>
+
+  <textarea id="journalInput" placeholder="Write your thoughts here..."></textarea>
+  <button id="saveBtn">Save Entry</button>
+
+  <div class="entries">
+    <h2>Your Entries</h2>
+    <ul id="entryList"></ul>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
